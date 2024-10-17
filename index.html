@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            display: none;
+        }
+        #card {
+            display: none;
+            background-color: gray;
+            width: 300px;
+            margin: 0 auto;
+            padding: 50px 5px;
+            margin-top: 30px;
+        }
+        #error {
+            color: red;
+            display: none;
+        }
+
+        #new {
+            display: none;
+            width: 150px;
+            height: 50px;
+            margin-top: 20px;
+            background-color: darkorchid;
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body style="text-align: center; background-color: black;">
+    <button onclick="window.location.reload();" id="new">New Game!</button>
+    <div id="box">
+        <img width="300" src="https://media.istockphoto.com/id/638192112/vector/spy-agent-secret-agent-hacker-secret-service-agent-icon-incognito-undercover.jpg?s=612x612&w=0&k=20&c=pwf9ysjUFBAz37duGAOHb7nlzA8mGVxTPO6klFeOdsg=" alt="">
+        <br>
+        <input id="count" style="padding: 20px;" type="number">
+        <p id="error">- 3 den az ve 100den cox oyuncu olmur, dur tullan</p>
+        <br>
+        <button id="start" onclick="start()" style="background-color: green; color: white; border: none; border-radius: 8px; padding: 15px 25px; margin-top: 20px;">Start</button>
+        <br>
+        <button id="select" onclick="select()" class="btn" style="background-color: blue; color: white; border: none; border-radius: 8px; padding: 25px 35px; margin-top: 20px;">Select</button>
+    
+        <div id="card">
+            <h1 id="h1"></h1>
+            <button onclick="hide()" id="button" style="font-size: 16px; border: none; padding: 10px; border-radius: 8px;">Hide</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
